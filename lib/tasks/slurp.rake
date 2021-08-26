@@ -3,14 +3,14 @@ namespace :slurp do
   task transactions: :environment do
 
     #insert data destroy
-    CpuData.destroy_all
-    GpuData.destroy_all
-    MoboData.destroy_all
-    RamData.destroy_all
-    CpuCoolerData.destroy_all
-    StorageData.destroy_all
-    PsuData.destroy_all
-    CaseData.destroy_all
+    CpuDatum.destroy_all
+    GpuDatum.destroy_all
+    MoboDatum.destroy_all
+    RamDatum.destroy_all
+    CpuCoolerDatum.destroy_all
+    SsdDatum.destroy_all
+    PsuDatum.destroy_all
+    CaseDatum.destroy_all
 
 
     require "csv"
@@ -20,7 +20,7 @@ namespace :slurp do
     csv1 = CSV.parse(csv1_text, :headers => true, :encoding => "ISO-8859-1")
 
     csv1.each do |row|
-      t = CpuData.new
+      t = CpuDatum.new
       t.cpu_id = row["cpu_id"]
       t.part_type = row["part_type"]
       t.brand = row["brand"]
@@ -66,7 +66,7 @@ namespace :slurp do
     csv3 = CSV.parse(csv3_text, :headers => true, :encoding => "ISO-8859-1")
 
     csv3.each do |row|
-      t = MoboData.new
+      t = MoboDatum.new
       t.mobo_id = row["mobo_id"]
       t.brand = row["brand"]
       t.name = row["name"]
@@ -87,7 +87,7 @@ namespace :slurp do
     csv4 = CSV.parse(csv4_text, :headers => true, :encoding => "ISO-8859-1")
 
     csv4.each do |row|
-      t = RamData.new
+      t = RamDatum.new
       t.ram_id = row["ram_id"]
       t.part_type = row["part_type"]
       t.series = row["series"]
@@ -108,7 +108,7 @@ namespace :slurp do
     csv5 = CSV.parse(csv5_text, :headers => true, :encoding => "ISO-8859-1")
 
     csv5.each do |row|
-      t = CpuCoolerData.new
+      t = CpuCoolerDatum.new
       t.cooler_id = row["cooler_id"]
       t.part_type = row["part_type"]
       t.brand = row["brand"]
@@ -130,7 +130,7 @@ namespace :slurp do
     csv6 = CSV.parse(csv6_text, :headers => true, :encoding => "ISO-8859-1")
 
     csv6.each do |row|
-      t = SsdData.new
+      t = SsdDatum.new
       t.storage_id = row["storage_id"]
       t.part_type = row["part_type"]
       t.brand = row["brand"]
@@ -151,7 +151,7 @@ namespace :slurp do
     csv7 = CSV.parse(csv7_text, :headers => true, :encoding => "ISO-8859-1")
 
     csv7.each do |row|
-      t = PsuData.new
+      t = PsuDatum.new
       t.psu_id = row["cooler_id"]
       t.part_type = row["part_type"]
       t.brand = row["brand"]
@@ -171,7 +171,7 @@ namespace :slurp do
     csv8 = CSV.parse(csv8_text, :headers => true, :encoding => "ISO-8859-1")
 
     csv8.each do |row|
-      t = CaseData.new
+      t = CaseDatum.new
       t.case_id = row["case_id"]
       t.part_type = row["part_type"]
       t.brand = row["brand"]

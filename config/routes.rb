@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-
+  #home page
+  get("/", { :controller => "home", :action => "homepage"})
 
   # Routes for the Case datum resource:
 

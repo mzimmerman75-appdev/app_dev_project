@@ -1,0 +1,6 @@
+﻿ram_id,part_type,series,brand,name,item_number,price,mem_speed,capacity,link,image
+1,ram,DDR4,G.SKILL,G.SKILL Ripjaws V Series 16GB,N82E16820231941,$73.99 ,3200,2x8GB,https://www.newegg.com/g-skill-16gb-288-pin-ddr4-sdram/p/N82E16820231941,https://c1.neweggimages.com/ProductImage/20-231-941-03.jpg
+2,ram,DDR4,CORSAIR,CORSAIR Vengeance RBG Pro 16GB,N82E16820236416,$104.99 ,3200,2x8GB,https://www.newegg.com/corsair-16gb-288-pin-ddr4-sdram/p/N82E16820236416,https://c1.neweggimages.com/ProductImage/20-236-416-01.jpg
+3,ram,DDR4,CORSAIR,CORSAIR Vengeance LPX 16BG,N82E16820233867,$109.00 ,3200,2x8GB,https://www.newegg.com/corsair-16gb-288-pin-ddr4-sdram/p/N82E16820233867,https://c1.neweggimages.com/ProductImage/20-233-867-01.jpg
+4,ram,DDR4,Patriot,Patriot Viper Elite 16Gb,N82E16820225098,$86.99 ,2666,2x8GB,https://www.newegg.com/patriot-16gb-288-pin-ddr4-sdram/p/N82E16820225098,https://c1.neweggimages.com/ProductImage/20-225-098-Z01.jpg
+5,ram,DDR4,OLOy,OLOy WarHawk RBG 16GB,N82E16820821309,$78.99 ,3600,2x8GB,https://www.newegg.com/oloy-16gb-288-pin-ddr4-sdram/p/N82E16820821309,https://c1.neweggimages.com/ProductImage/20-821-309-V05.jpg

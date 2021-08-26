@@ -1,0 +1,236 @@
+<div>
+  <div>
+    <h1>
+      Gpu datum #<%= @the_gpu_datum.id %> details
+    </h1>
+
+    <div>
+      <div>
+        <a href="/gpu_data">
+          Go back
+        </a>
+      </div>
+
+      <div>
+        <a href="/delete_gpu_datum/<%= @the_gpu_datum.id %>">
+          Delete gpu datum
+        </a>
+      </div>
+    </div>
+
+    <dl>
+      <dt>
+        Gpu
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.gpu_id %>
+      </dd>
+
+      <dt>
+        Part type
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.part_type %>
+      </dd>
+
+      <dt>
+        Series
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.series %>
+      </dd>
+
+      <dt>
+        Brand
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.brand %>
+      </dd>
+
+      <dt>
+        Name
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.name %>
+      </dd>
+
+      <dt>
+        Item number
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.item_number %>
+      </dd>
+
+      <dt>
+        Price
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.price %>
+      </dd>
+
+      <dt>
+        Cuda cores
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.cuda_cores %>
+      </dd>
+
+      <dt>
+        Boost clock
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.boost_clock %>
+      </dd>
+
+      <dt>
+        Vram
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.vram %>
+      </dd>
+
+      <dt>
+        Link
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.link %>
+      </dd>
+
+      <dt>
+        Image
+      </dt>
+      <dd>
+        <%= @the_gpu_datum.image %>
+      </dd>
+
+      <dt>
+        Created at
+      </dt>
+      <dd>
+        <%= time_ago_in_words(@the_gpu_datum.created_at) %> ago
+      </dd>
+
+      <dt>
+        Updated at
+      </dt>
+      <dd>
+        <%= time_ago_in_words(@the_gpu_datum.updated_at) %> ago
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<hr>
+
+
+<div>
+  <div>
+    <h2>
+      Edit gpu datum
+    </h2>
+
+    <form action="/modify_gpu_datum/<%= @the_gpu_datum.id %>"  method="post" >
+      <div>
+        <label for="gpu_id_box">
+          Gpu
+        </label>
+
+        <input type="text" id="gpu_id_box" name="query_gpu_id" value="<%= @the_gpu_datum.gpu_id %>">
+      </div>
+
+      <div>
+        <label for="part_type_box">
+          Part type
+        </label>
+
+        <input type="text" id="part_type_box" name="query_part_type" value="<%= @the_gpu_datum.part_type %>">
+      </div>
+
+      <div>
+        <label for="series_box">
+          Series
+        </label>
+
+        <input type="text" id="series_box" name="query_series" value="<%= @the_gpu_datum.series %>">
+      </div>
+
+      <div>
+        <label for="brand_box">
+          Brand
+        </label>
+
+        <input type="text" id="brand_box" name="query_brand" value="<%= @the_gpu_datum.brand %>">
+      </div>
+
+      <div>
+        <label for="name_box">
+          Name
+        </label>
+
+        <input type="text" id="name_box" name="query_name" value="<%= @the_gpu_datum.name %>">
+      </div>
+
+      <div>
+        <label for="item_number_box">
+          Item number
+        </label>
+
+        <input type="text" id="item_number_box" name="query_item_number" value="<%= @the_gpu_datum.item_number %>">
+      </div>
+
+      <div>
+        <label for="price_box">
+          Price
+        </label>
+
+        <input type="text" id="price_box" name="query_price" value="<%= @the_gpu_datum.price %>">
+      </div>
+
+      <div>
+        <label for="cuda_cores_box">
+          Cuda cores
+        </label>
+
+        <input type="text" id="cuda_cores_box" name="query_cuda_cores" value="<%= @the_gpu_datum.cuda_cores %>">
+      </div>
+
+      <div>
+        <label for="boost_clock_box">
+          Boost clock
+        </label>
+
+        <input type="text" id="boost_clock_box" name="query_boost_clock" value="<%= @the_gpu_datum.boost_clock %>">
+      </div>
+
+      <div>
+        <label for="vram_box">
+          Vram
+        </label>
+
+        <input type="text" id="vram_box" name="query_vram" value="<%= @the_gpu_datum.vram %>">
+      </div>
+
+      <div>
+        <label for="link_box">
+          Link
+        </label>
+
+        <input type="text" id="link_box" name="query_link" value="<%= @the_gpu_datum.link %>">
+      </div>
+
+      <div>
+        <label for="image_box">
+          Image
+        </label>
+
+        <input type="text" id="image_box" name="query_image" value="<%= @the_gpu_datum.image %>">
+      </div>
+
+      <button>
+        Update gpu datum
+      </button>
+    </form>
+  </div>
+</div>
+
+<hr>

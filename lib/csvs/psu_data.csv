@@ -1,0 +1,6 @@
+﻿psu_id,part_type,brand,name,item_number,price,wattage,certification,link,image
+1,psu,Corsair,CORSAIR RM Series RM650 650W 80 Plus Gold Certified,N82E16817139101,$114.99 ,650W,Gold,https://www.newegg.com/corsair-rm-series-rm650-cp-9020194-na-650w/p/N82E16817139101,https://c1.neweggimages.com/ProductImage/17-139-101-V22.jpg
+2,psu,Corsair,CORSAIR RM Series RM50 850W 80 Plus Gold Certified,9SIAPW2E8D3877,$128.99 ,850W,Gold,https://www.newegg.com/corsair-rm-series-rm850-cp-9020196-na-850w/p/17-139-248,https://c1.neweggimages.com/ProductImage/17-139-248-V33.jpg
+3,psu,EVGA,EVGA SuperNova750 GA 80 Plus Gold 750W,1HU-00J7-004V2,$139.99 ,750W,Gold,https://www.newegg.com/evga-supernova-750-ga-220-ga-0750-x1-750w/p/1HU-00J7-004V2,https://c1.neweggimages.com/ProductImage/1HU-00J7-004V2-V01.jpg
+4,psu,Seasonic,Seasonic PRIME TX-750 750W 80+ Titanium,N82E16817151197,$209.99 ,750W,Titanium,https://www.newegg.com/seasonic-prime-ultra-titanium-ssr-750tr-750w/p/N82E16817151197,https://c1.neweggimages.com/ProductImage/17-151-197-S11.jpg
+5,psu,DeepCool,DeepCool DA600 80 Plus Bronze Certified 600W,N82E16817328022,$76.99 ,600W,Bronze,https://www.newegg.com/deepcool-da600-600w/p/N82E16817328022?quicklink=true,https://c1.neweggimages.com/ProductImage/17-328-022-01.jpg

@@ -1,0 +1,8 @@
+﻿cpu_id,part_type,brand,name,item_number,price,cores,threads,base_clock,boost_clock,l3_Cache,socket,link,image
+1,cpu,Intel,Intel Core i5-11600K,N82E16819118235,$269.99 ,6,12,3.9 GHz,4.9 GHz,12MB,LGA 1200,https://www.newegg.com/intel-core-i5-11600k-core-i5-11th-gen/p/19-118-235,https://c1.neweggimages.com/ProductImage/19-118-235-V01.jpg
+2,cpu,Intel,Intel Core i7-11700K,N82E16819118233,$399.99 ,8,16,3.6 GHz,5.0 GHz,16MB,LGA 1200,https://www.newegg.com/intel-core-i7-11700k-core-i7-11th-gen/p/19-118-233,https://c1.neweggimages.com/ProductImage/19-118-233-V01.jpg
+3,cpu,Intel,Intel Core i9-11900K,N82E16819118231,$549.99 ,8,16,3.5 GHz,5.3 GHz,16MB,LGA 1200,https://www.newegg.com/intel-core-i9-11900k-core-i9-11th-gen/p/19-118-231,https://c1.neweggimages.com/ProductImage/19-118-231-V04.jpg
+4,cpu,AMD,Ryzen 3 3300X,N82E16819113648,$149.99 ,4,8,3.8 Ghz,4.3 GHz,16MB,AM4,https://www.newegg.com/amd-ryzen-3-3300x-ryzen-3-3rd-gen/p/N82E16819113648,https://c1.neweggimages.com/ProductImage/19-113-648-S01.jpg
+5,cpu,AMD,Ryzen 5 5600X,N82E16819113666,$288.89 ,6,12,3.7 GHz,4.6 GHz,32MB,AM4,https://www.newegg.com/amd-ryzen-5-5600x/p/19-113-666,https://c1.neweggimages.com/ProductImage/19-113-666-V01.jpg
+6,cpu,AMD,Ryzen 7 5800X,N82E16819113665,$399.99 ,8,16,3.8 GHz,4.7 GHz,32MB,AM4,https://www.newegg.com/amd-ryzen-7-5800x/p/19-113-665,https://c1.neweggimages.com/ProductImage/19-113-665-V01.jpg
+7,cpu,AMD,Ryzen 9 5900X,N82E16819113664,$569.99 ,12,24,3.7 GHz,4.8 GHz,64MB,AM4,https://www.newegg.com/amd-ryzen-9-5900x/p/19-113-664,https://c1.neweggimages.com/ProductImage/19-113-664-V01.jpg

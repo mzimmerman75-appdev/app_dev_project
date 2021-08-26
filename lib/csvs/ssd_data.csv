@@ -1,0 +1,7 @@
+﻿storage_id,part_type,brand,name,item_number,price,storage_size,read_speed,write_speed,link,image
+1,ssd,Crucial,Crucial MX500 1TB 3D NAND Sata 2.5 inch SSD,9SIA4P08X86808,$99.99 ,1TB,560 MB/s,510 MB/s,https://www.newegg.com/crucial-mx500-1tb/p/N82E16820156174,https://c1.neweggimages.com/ProductImage/20-156-174-V09.jpg
+2,ssd,Samsung,"Samsung 870 QVO Series 2.5"" 1 TB",N82E16820147781,$104.99 ,1TB,560 MB/s,530 MB/s,https://www.newegg.com/samsung-1tb-870-qvo-series/p/N82E16820147781,https://c1.neweggimages.com/ProductImage/20-147-781-V04.jpg
+3,ssd,Western Digital,WD Blue 3D NAND 1 TB Internal SSD,N82E16820250088,$94.99 ,1TB,560 MB/s,530 MB/s,https://www.newegg.com/western-digital-blue-1tb/p/N82E16820250088,https://c1.neweggimages.com/ProductImage/20-250-088-V03.jpg
+4,m.2,Samsung,Samsung 970 EVO PLUS M.2 1 TB,N82E16820147743,$144.99 ,1TB,3500 MB/s,3300 MB/s,https://www.newegg.com/samsung-970-evo-plus-1tb/p/N82E16820147743,https://c1.neweggimages.com/ProductImage/20-147-743-V01.jpg
+5,m.2,Western Digital,WD Black SN750 NVMe M.2 1 TB,N82E16820250110,$179.99 ,1TB,3470 MB/s,3000 MB/s,https://www.newegg.com/western-digital-black-sn750-nvme-1tb/p/N82E16820250110,https://c1.neweggimages.com/ProductImage/20-250-110-07.jpg
+6,m.2,Intel,Intel 670p Series M.2 2280 1 TB,N82E16820167474,$124.99 ,1TB,3500 MB/s,2500 MB/s,https://www.newegg.com/intel-1tb-670p-series/p/N82E16820167474?quicklink=true,https://c1.neweggimages.com/ProductImage/20-167-474-V01.jpg

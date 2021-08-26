@@ -1,0 +1,246 @@
+<div>
+  <div>
+    <h1>
+      List of all ssd data
+    </h1>
+  </div>
+</div>
+
+<hr>
+
+<div>
+  <div>
+    <h2>
+      Add a new ssd datum
+    </h2>
+
+    <form action="/insert_ssd_datum" method="post">
+      <div>
+        <label for="storage_id_box">
+          Storage
+        </label>
+
+        <input type="text" id="storage_id_box" name="query_storage_id">
+      </div>
+
+      <div>
+        <label for="part_type_box">
+          Part type
+        </label>
+
+        <input type="text" id="part_type_box" name="query_part_type">
+      </div>
+
+      <div>
+        <label for="brand_box">
+          Brand
+        </label>
+
+        <input type="text" id="brand_box" name="query_brand">
+      </div>
+
+      <div>
+        <label for="name_box">
+          Name
+        </label>
+
+        <input type="text" id="name_box" name="query_name">
+      </div>
+
+      <div>
+        <label for="item_number_box">
+          Item number
+        </label>
+
+        <input type="text" id="item_number_box" name="query_item_number">
+      </div>
+
+      <div>
+        <label for="price_box">
+          Price
+        </label>
+
+        <input type="text" id="price_box" name="query_price">
+      </div>
+
+      <div>
+        <label for="storage_size_box">
+          Storage size
+        </label>
+
+        <input type="text" id="storage_size_box" name="query_storage_size">
+      </div>
+
+      <div>
+        <label for="read_speed_box">
+          Read speed
+        </label>
+
+        <input type="text" id="read_speed_box" name="query_read_speed">
+      </div>
+
+      <div>
+        <label for="write_speed_box">
+          Write speed
+        </label>
+
+        <input type="text" id="write_speed_box" name="query_write_speed">
+      </div>
+
+      <div>
+        <label for="link_box">
+          Link
+        </label>
+
+        <input type="text" id="link_box" name="query_link">
+      </div>
+
+      <div>
+        <label for="image_box">
+          Image
+        </label>
+
+        <input type="text" id="image_box" name="query_image">
+      </div>
+
+      <button>
+        Create ssd datum
+      </button>
+    </form>
+  </div>
+</div>
+
+<hr>
+<div>
+  <div>
+    <table>
+      <tr>
+        <th>
+          ID
+        </th>
+
+        <th>
+          Storage
+        </th>
+
+        <th>
+          Part type
+        </th>
+
+        <th>
+          Brand
+        </th>
+
+        <th>
+          Name
+        </th>
+
+        <th>
+          Item number
+        </th>
+
+        <th>
+          Price
+        </th>
+
+        <th>
+          Storage size
+        </th>
+
+        <th>
+          Read speed
+        </th>
+
+        <th>
+          Write speed
+        </th>
+
+        <th>
+          Link
+        </th>
+
+        <th>
+          Image
+        </th>
+
+        <th>
+          Created at
+        </th>
+
+        <th>
+          Updated at
+        </th>
+
+        <th>
+        </th>
+      </tr>
+
+      <% @list_of_ssd_data.each do |a_ssd_datum| %>
+      <tr>
+        <td>
+          <%= a_ssd_datum.id %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.storage_id %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.part_type %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.brand %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.name %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.item_number %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.price %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.storage_size %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.read_speed %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.write_speed %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.link %>
+        </td>
+
+        <td>
+          <%= a_ssd_datum.image %>
+        </td>
+
+        <td>
+          <%= time_ago_in_words(a_ssd_datum.created_at) %> ago
+        </td>
+        <td>
+          <%= time_ago_in_words(a_ssd_datum.updated_at) %> ago
+        </td>
+
+        <td>
+          <a href="/ssd_data/<%= a_ssd_datum.id %>">
+            Show details
+          </a>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+
+<hr>

@@ -1,0 +1,24 @@
+﻿mobo_id,brand,name,item_number,price,socket,chipset,size,ram,link,image
+1,Asus,Asus Prime Z590M-Plus,N82E16813119373,$174.99 ,LGA 1200,Z590,micro-ATX,DDR4,https://www.newegg.com/p/N82E16813119373,https://c1.neweggimages.com/ProductImage/13-119-373-01.jpg
+2,Asus,Asus Prime Z590-A,N82E16813119369,$263.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/p/N82E16813119369,https://c1.neweggimages.com/ProductImage/13-119-369-01.jpg
+3,Asus,Asus ROG Strix Z590-A,N82E16813119371,$320.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/asus-rog-strix-z590-a-gaming-wifi/p/13-119-371,https://c1.neweggimages.com/ProductImage/13-119-371-01.jpg
+4,Asus,Asus TUF Gaming Z590-Plus,N82E16813119374,$224.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/p/13-119-374,https://c1.neweggimages.com/ProductImage/13-119-374-05.jpg
+5,Asus,Asus ROG Maximus XIII Hero Z590,N82E16813119366,$470.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/asus-rog-maximus-xiii-hero/p/13-119-366,https://c1.neweggimages.com/ProductImage/13-119-366-V83.jpg
+6,ASRock,ASRock Z590 EXTREME WIFI 6E,9SIAMY5FCE2171,$213.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/p/N82E16813157983,https://c1.neweggimages.com/ProductImage/13-157-983-V07.jpg
+7,ASRock,ASRock Z590 TAICHI,N82E16813157988,$399.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/p/13-157-988,https://c1.neweggimages.com/ProductImage/13-157-988-03.jpg
+8,GIGABYTE,GIGABYTE Z590 AORUS ULTRA,N82E16813145270,$299.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/p/N82E16813145270,https://c1.neweggimages.com/ProductImage/13-145-270-01.jpg
+9,GIGABYTE,GIGABYTE Z590 AORUS ELITE,N82E16813145264,$199.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/p/N82E16813145264,https://c1.neweggimages.com/ProductImage/13-145-264-V01.jpg
+10,MSI,MSI MPG Z590 GAMING EDGE WIFI,N82E16813144387,$329.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/p/N82E16813144387,https://c1.neweggimages.com/ProductImage/13-144-387-V01.jpg
+11,MSI,MSI MAG Z590 TOMAHAWK WIFI,N82E16813144389,$269.99 ,LGA 1200,Z590,ATX,DDR4,https://www.newegg.com/p/13-144-389,https://c1.neweggimages.com/ProductImage/13-144-389-V01.jpg
+12,Asus,ROG Strix B550-F Gaming AM4 AMD B550,N82E16813119312,$178.99 ,AM4,B550,ATX,DDR4,https://www.newegg.com/asus-rog-strix-b550-f-gaming/p/13-119-312,https://c1.neweggimages.com/ProductImage/13-119-312-V03.jpg
+13,Asus,Asus AMD AM4 ROG Strix X570-E,N82E16813119111,$329.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/asus-rog-strix-x570-e-gaming/p/N82E16813119111?quicklink=true,https://c1.neweggimages.com/ProductImage/13-119-111-S09.jpg
+14,Asus,Asus AM4 TUF Gaming X570-Plus,9SIAD6H9V56167,$214.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/asus-tuf-gaming-x570-plus/p/13-119-198,https://c1.neweggimages.com/ProductImage/13-119-198-V04.jpg
+15,Asus,Asus AMD AM4 ROG X570 Crosshair VIII Hero,N82E16813119110,$368.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/asus-rog-crosshair-viii-hero/p/13-119-110,https://c1.neweggimages.com/ProductImage/13-119-110-V07.jpg
+16,ASRock,ASROCK X570 PHANTOM GAMING 4 AM4,N82E16813157884,$144.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/asrock-x570-phantom-gaming-4/p/N82E16813157884?quicklink=true,https://c1.neweggimages.com/ProductImage/13-157-884-V01.jpg
+17,ASRock,ASROCK X570 EXTREME4 AM4 AMD,N82E16813157888,$224.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/asrock-x570-extreme4/p/13-157-888,https://c1.neweggimages.com/ProductImage/13-157-888-V01.jpg
+18,ASRock,ASROCK X570 TAICHI RAZER EDITION AM4 AMD,N82E16813157971,$380.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/asrock-x570-taichi-razer-edition/p/N82E16813157971?quicklink=true,https://c1.neweggimages.com/ProductImage/13-157-971-01.jpg
+19,MSI,MSI MAG B550 TOMAHAWK AM4 AMD,9SIAV3AFK34471,$161.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/msi-mag-b550-tomahawk/p/N82E16813144326?quicklink=true,https://c1.neweggimages.com/ProductImage/13-144-326-V01.jpg
+20,MSI,MSI MPG X570 GAMING PRO CARBON WIFI,N82E16813144260,$273.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/msi-mpg-x570-gaming-pro-carbon-wifi/p/13-144-260,https://c1.neweggimages.com/ProductImage/13-144-260-V06.jpg
+21,MSI,MSI MEG X570 ACE Gaming Motherboard AMD,N82E16813144259,$399.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/msi-meg-x570-ace/p/13-144-259,https://c1.neweggimages.com/ProductImage/13-144-259-V06.jpg
+22,GIGABYTE,GIGABYTE X570 AORUS ELITE AMD RYZEN,9SIAY5DFEX2108,$208.89 ,AM4,X570,ATX,DDR4,https://www.newegg.com/gigabyte-x570-aorus-elite/p/13-145-160,https://c1.neweggimages.com/ProductImage/13-145-160-V07.jpg
+23,GIGABYTE,GIGABYTE X570 AORUS MASTER AMD RYZEN,N82E16813145155,$369.99 ,AM4,X570,ATX,DDR4,https://www.newegg.com/gigabyte-x570-aorus-master/p/N82E16813145155,https://c1.neweggimages.com/ProductImage/13-145-155-V01.jpg

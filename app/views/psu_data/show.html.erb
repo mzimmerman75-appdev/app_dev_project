@@ -1,0 +1,206 @@
+<div>
+  <div>
+    <h1>
+      Psu datum #<%= @the_psu_datum.id %> details
+    </h1>
+
+    <div>
+      <div>
+        <a href="/psu_data">
+          Go back
+        </a>
+      </div>
+
+      <div>
+        <a href="/delete_psu_datum/<%= @the_psu_datum.id %>">
+          Delete psu datum
+        </a>
+      </div>
+    </div>
+
+    <dl>
+      <dt>
+        Psu
+      </dt>
+      <dd>
+        <%= @the_psu_datum.psu_id %>
+      </dd>
+
+      <dt>
+        Part type
+      </dt>
+      <dd>
+        <%= @the_psu_datum.part_type %>
+      </dd>
+
+      <dt>
+        Brand
+      </dt>
+      <dd>
+        <%= @the_psu_datum.brand %>
+      </dd>
+
+      <dt>
+        Name
+      </dt>
+      <dd>
+        <%= @the_psu_datum.name %>
+      </dd>
+
+      <dt>
+        Item number
+      </dt>
+      <dd>
+        <%= @the_psu_datum.item_number %>
+      </dd>
+
+      <dt>
+        Price
+      </dt>
+      <dd>
+        <%= @the_psu_datum.price %>
+      </dd>
+
+      <dt>
+        Wattage
+      </dt>
+      <dd>
+        <%= @the_psu_datum.wattage %>
+      </dd>
+
+      <dt>
+        Certification
+      </dt>
+      <dd>
+        <%= @the_psu_datum.certification %>
+      </dd>
+
+      <dt>
+        Link
+      </dt>
+      <dd>
+        <%= @the_psu_datum.link %>
+      </dd>
+
+      <dt>
+        Image
+      </dt>
+      <dd>
+        <%= @the_psu_datum.image %>
+      </dd>
+
+      <dt>
+        Created at
+      </dt>
+      <dd>
+        <%= time_ago_in_words(@the_psu_datum.created_at) %> ago
+      </dd>
+
+      <dt>
+        Updated at
+      </dt>
+      <dd>
+        <%= time_ago_in_words(@the_psu_datum.updated_at) %> ago
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<hr>
+
+
+<div>
+  <div>
+    <h2>
+      Edit psu datum
+    </h2>
+
+    <form action="/modify_psu_datum/<%= @the_psu_datum.id %>"  method="post" >
+      <div>
+        <label for="psu_id_box">
+          Psu
+        </label>
+
+        <input type="text" id="psu_id_box" name="query_psu_id" value="<%= @the_psu_datum.psu_id %>">
+      </div>
+
+      <div>
+        <label for="part_type_box">
+          Part type
+        </label>
+
+        <input type="text" id="part_type_box" name="query_part_type" value="<%= @the_psu_datum.part_type %>">
+      </div>
+
+      <div>
+        <label for="brand_box">
+          Brand
+        </label>
+
+        <input type="text" id="brand_box" name="query_brand" value="<%= @the_psu_datum.brand %>">
+      </div>
+
+      <div>
+        <label for="name_box">
+          Name
+        </label>
+
+        <input type="text" id="name_box" name="query_name" value="<%= @the_psu_datum.name %>">
+      </div>
+
+      <div>
+        <label for="item_number_box">
+          Item number
+        </label>
+
+        <input type="text" id="item_number_box" name="query_item_number" value="<%= @the_psu_datum.item_number %>">
+      </div>
+
+      <div>
+        <label for="price_box">
+          Price
+        </label>
+
+        <input type="text" id="price_box" name="query_price" value="<%= @the_psu_datum.price %>">
+      </div>
+
+      <div>
+        <label for="wattage_box">
+          Wattage
+        </label>
+
+        <input type="text" id="wattage_box" name="query_wattage" value="<%= @the_psu_datum.wattage %>">
+      </div>
+
+      <div>
+        <label for="certification_box">
+          Certification
+        </label>
+
+        <input type="text" id="certification_box" name="query_certification" value="<%= @the_psu_datum.certification %>">
+      </div>
+
+      <div>
+        <label for="link_box">
+          Link
+        </label>
+
+        <input type="text" id="link_box" name="query_link" value="<%= @the_psu_datum.link %>">
+      </div>
+
+      <div>
+        <label for="image_box">
+          Image
+        </label>
+
+        <input type="text" id="image_box" name="query_image" value="<%= @the_psu_datum.image %>">
+      </div>
+
+      <button>
+        Update psu datum
+      </button>
+    </form>
+  </div>
+</div>
+
+<hr>

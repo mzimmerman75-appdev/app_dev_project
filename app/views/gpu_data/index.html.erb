@@ -1,0 +1,262 @@
+<div>
+  <div>
+    <h1>
+      List of all gpu data
+    </h1>
+  </div>
+</div>
+
+<hr>
+
+<div>
+  <div>
+    <h2>
+      Add a new gpu datum
+    </h2>
+
+    <form action="/insert_gpu_datum" method="post">
+      <div>
+        <label for="gpu_id_box">
+          Gpu
+        </label>
+
+        <input type="text" id="gpu_id_box" name="query_gpu_id">
+      </div>
+
+      <div>
+        <label for="part_type_box">
+          Part type
+        </label>
+
+        <input type="text" id="part_type_box" name="query_part_type">
+      </div>
+
+      <div>
+        <label for="series_box">
+          Series
+        </label>
+
+        <input type="text" id="series_box" name="query_series">
+      </div>
+
+      <div>
+        <label for="brand_box">
+          Brand
+        </label>
+
+        <input type="text" id="brand_box" name="query_brand">
+      </div>
+
+      <div>
+        <label for="name_box">
+          Name
+        </label>
+
+        <input type="text" id="name_box" name="query_name">
+      </div>
+
+      <div>
+        <label for="item_number_box">
+          Item number
+        </label>
+
+        <input type="text" id="item_number_box" name="query_item_number">
+      </div>
+
+      <div>
+        <label for="price_box">
+          Price
+        </label>
+
+        <input type="text" id="price_box" name="query_price">
+      </div>
+
+      <div>
+        <label for="cuda_cores_box">
+          Cuda cores
+        </label>
+
+        <input type="text" id="cuda_cores_box" name="query_cuda_cores">
+      </div>
+
+      <div>
+        <label for="boost_clock_box">
+          Boost clock
+        </label>
+
+        <input type="text" id="boost_clock_box" name="query_boost_clock">
+      </div>
+
+      <div>
+        <label for="vram_box">
+          Vram
+        </label>
+
+        <input type="text" id="vram_box" name="query_vram">
+      </div>
+
+      <div>
+        <label for="link_box">
+          Link
+        </label>
+
+        <input type="text" id="link_box" name="query_link">
+      </div>
+
+      <div>
+        <label for="image_box">
+          Image
+        </label>
+
+        <input type="text" id="image_box" name="query_image">
+      </div>
+
+      <button>
+        Create gpu datum
+      </button>
+    </form>
+  </div>
+</div>
+
+<hr>
+<div>
+  <div>
+    <table>
+      <tr>
+        <th>
+          ID
+        </th>
+
+        <th>
+          Gpu
+        </th>
+
+        <th>
+          Part type
+        </th>
+
+        <th>
+          Series
+        </th>
+
+        <th>
+          Brand
+        </th>
+
+        <th>
+          Name
+        </th>
+
+        <th>
+          Item number
+        </th>
+
+        <th>
+          Price
+        </th>
+
+        <th>
+          Cuda cores
+        </th>
+
+        <th>
+          Boost clock
+        </th>
+
+        <th>
+          Vram
+        </th>
+
+        <th>
+          Link
+        </th>
+
+        <th>
+          Image
+        </th>
+
+        <th>
+          Created at
+        </th>
+
+        <th>
+          Updated at
+        </th>
+
+        <th>
+        </th>
+      </tr>
+
+      <% @list_of_gpu_data.each do |a_gpu_datum| %>
+      <tr>
+        <td>
+          <%= a_gpu_datum.id %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.gpu_id %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.part_type %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.series %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.brand %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.name %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.item_number %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.price %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.cuda_cores %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.boost_clock %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.vram %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.link %>
+        </td>
+
+        <td>
+          <%= a_gpu_datum.image %>
+        </td>
+
+        <td>
+          <%= time_ago_in_words(a_gpu_datum.created_at) %> ago
+        </td>
+        <td>
+          <%= time_ago_in_words(a_gpu_datum.updated_at) %> ago
+        </td>
+
+        <td>
+          <a href="/gpu_data/<%= a_gpu_datum.id %>">
+            Show details
+          </a>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+
+<hr>

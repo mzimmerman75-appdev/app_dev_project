@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_26_033801) do
+ActiveRecord::Schema.define(version: 2021_08_27_022846) do
 
   create_table "case_data", force: :cascade do |t|
     t.string "case_id"
@@ -140,6 +140,15 @@ ActiveRecord::Schema.define(version: 2021_08_26_033801) do
     t.string "write_speed"
     t.string "link"
     t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "password_digest"
+    t.string "first_name"
+    t.string "last_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

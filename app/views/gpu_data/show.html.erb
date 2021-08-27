@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Gpu datum #<%= @the_gpu_datum.id %> details
+      <%= @the_gpu_datum.name %> Details
     </h1>
 
     <div>
@@ -13,7 +13,7 @@
 
       <div>
         <a href="/delete_gpu_datum/<%= @the_gpu_datum.id %>">
-          Delete gpu datum
+          Delete GPU
         </a>
       </div>
     </div>
@@ -93,14 +93,14 @@
         Link
       </dt>
       <dd>
-        <%= @the_gpu_datum.link %>
+        <a href="<%= @the_gpu_datum.link %>">Part Link</a>
       </dd>
 
       <dt>
         Image
       </dt>
       <dd>
-        <img src="<%= @the_gpu_datum.image %>">
+        <img src="<%= @the_gpu_datum.image %>" width="200" height="135">
       </dd>
 
       <dt>
@@ -126,7 +126,7 @@
 <div>
   <div>
     <h2>
-      Edit gpu datum
+      Edit This GPU
     </h2>
 
     <form action="/modify_gpu_datum/<%= @the_gpu_datum.id %>"  method="post" >
@@ -227,7 +227,7 @@
       </div>
 
       <button>
-        Update gpu datum
+        Update GPU
       </button>
     </form>
   </div>

@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      List of all ram data
+      List of all Memory
     </h1>
   </div>
 </div>
@@ -11,7 +11,7 @@
 <div>
   <div>
     <h2>
-      Add a new ram datum
+      Add new Memory
     </h2>
 
     <form action="/insert_ram_datum" method="post">
@@ -73,7 +73,7 @@
 
       <div>
         <label for="mem_speed_box">
-          Mem speed
+          Memory speed
         </label>
 
         <input type="text" id="mem_speed_box" name="query_mem_speed">
@@ -104,7 +104,7 @@
       </div>
 
       <button>
-        Create ram datum
+        Add Memory
       </button>
     </form>
   </div>
@@ -115,17 +115,6 @@
   <div>
     <table>
       <tr>
-        <th>
-          ID
-        </th>
-
-        <th>
-          Ram
-        </th>
-
-        <th>
-          Part type
-        </th>
 
         <th>
           Series
@@ -140,15 +129,11 @@
         </th>
 
         <th>
-          Item number
-        </th>
-
-        <th>
           Price
         </th>
 
         <th>
-          Mem speed
+          Memory speed
         </th>
 
         <th>
@@ -156,19 +141,7 @@
         </th>
 
         <th>
-          Link
-        </th>
-
-        <th>
           Image
-        </th>
-
-        <th>
-          Created at
-        </th>
-
-        <th>
-          Updated at
         </th>
 
         <th>
@@ -177,17 +150,6 @@
 
       <% @list_of_ram_data.each do |a_ram_datum| %>
       <tr>
-        <td>
-          <%= a_ram_datum.id %>
-        </td>
-
-        <td>
-          <%= a_ram_datum.ram_id %>
-        </td>
-
-        <td>
-          <%= a_ram_datum.part_type %>
-        </td>
 
         <td>
           <%= a_ram_datum.series %>
@@ -199,10 +161,6 @@
 
         <td>
           <%= a_ram_datum.name %>
-        </td>
-
-        <td>
-          <%= a_ram_datum.item_number %>
         </td>
 
         <td>
@@ -218,18 +176,7 @@
         </td>
 
         <td>
-          <%= a_ram_datum.link %>
-        </td>
-
-        <td>
-          <%= a_ram_datum.image %>
-        </td>
-
-        <td>
-          <%= time_ago_in_words(a_ram_datum.created_at) %> ago
-        </td>
-        <td>
-          <%= time_ago_in_words(a_ram_datum.updated_at) %> ago
+          <img src="<%= a_ram_datum.image %>" width="100" height="75">
         </td>
 
         <td>

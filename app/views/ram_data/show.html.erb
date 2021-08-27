@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Ram datum #<%= @the_ram_datum.id %> details
+      <%= @the_ram_datum.name %> Details
     </h1>
 
     <div>
@@ -13,7 +13,7 @@
 
       <div>
         <a href="/delete_ram_datum/<%= @the_ram_datum.id %>">
-          Delete ram datum
+          Delete Memory
         </a>
       </div>
     </div>
@@ -86,14 +86,14 @@
         Link
       </dt>
       <dd>
-        <%= @the_ram_datum.link %>
+        <a href="<%= @the_ram_datum.link %>">part Link</a>
       </dd>
 
       <dt>
         Image
       </dt>
       <dd>
-        <%= @the_ram_datum.image %>
+        <img src="<%= @the_ram_datum.image %>" width="350" height="225">
       </dd>
 
       <dt>
@@ -119,7 +119,7 @@
 <div>
   <div>
     <h2>
-      Edit ram datum
+      Edit This Memory
     </h2>
 
     <form action="/modify_ram_datum/<%= @the_ram_datum.id %>"  method="post" >
@@ -212,7 +212,7 @@
       </div>
 
       <button>
-        Update ram datum
+        Update Memory
       </button>
     </form>
   </div>

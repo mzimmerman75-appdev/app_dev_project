@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      List of all gpu data
+      Graphics Cards
     </h1>
   </div>
 </div>
@@ -11,7 +11,7 @@
 <div>
   <div>
     <h2>
-      Add a new gpu datum
+      Add a new GPU
     </h2>
 
     <form action="/insert_gpu_datum" method="post">
@@ -112,7 +112,7 @@
       </div>
 
       <button>
-        Create gpu datum
+        Add GPU
       </button>
     </form>
   </div>
@@ -123,21 +123,6 @@
   <div>
     <table>
       <tr>
-        <th>
-          ID
-        </th>
-
-        <th>
-          Gpu
-        </th>
-
-        <th>
-          Part type
-        </th>
-
-        <th>
-          Series
-        </th>
 
         <th>
           Brand
@@ -145,10 +130,6 @@
 
         <th>
           Name
-        </th>
-
-        <th>
-          Item number
         </th>
 
         <th>
@@ -168,19 +149,7 @@
         </th>
 
         <th>
-          Link
-        </th>
-
-        <th>
           Image
-        </th>
-
-        <th>
-          Created at
-        </th>
-
-        <th>
-          Updated at
         </th>
 
         <th>
@@ -190,31 +159,11 @@
       <% @list_of_gpu_data.each do |a_gpu_datum| %>
       <tr>
         <td>
-          <%= a_gpu_datum.id %>
-        </td>
-
-        <td>
-          <%= a_gpu_datum.gpu_id %>
-        </td>
-
-        <td>
-          <%= a_gpu_datum.part_type %>
-        </td>
-
-        <td>
-          <%= a_gpu_datum.series %>
-        </td>
-
-        <td>
           <%= a_gpu_datum.brand %>
         </td>
 
         <td>
           <%= a_gpu_datum.name %>
-        </td>
-
-        <td>
-          <%= a_gpu_datum.item_number %>
         </td>
 
         <td>
@@ -233,19 +182,9 @@
           <%= a_gpu_datum.vram %>
         </td>
 
-        <td>
-          <%= a_gpu_datum.link %>
-        </td>
 
         <td>
-          <%= a_gpu_datum.image %>
-        </td>
-
-        <td>
-          <%= time_ago_in_words(a_gpu_datum.created_at) %> ago
-        </td>
-        <td>
-          <%= time_ago_in_words(a_gpu_datum.updated_at) %> ago
+          <img src="<%= a_gpu_datum.image %>" width="100" height="65">
         </td>
 
         <td>

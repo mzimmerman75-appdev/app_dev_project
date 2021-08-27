@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Mobo datum #<%= @the_mobo_datum.id %> details
+      <%= @the_mobo_datum.name %> Details
     </h1>
 
     <div>
@@ -13,7 +13,7 @@
 
       <div>
         <a href="/delete_mobo_datum/<%= @the_mobo_datum.id %>">
-          Delete mobo datum
+          Delete Motherboard
         </a>
       </div>
     </div>
@@ -86,14 +86,14 @@
         Link
       </dt>
       <dd>
-        <%= @the_mobo_datum.link %>
+        <a href="<%= @the_mobo_datum.link %>"> Part Link</a>
       </dd>
 
       <dt>
         Image
       </dt>
       <dd>
-        <%= @the_mobo_datum.image %>
+        <img src="<%= @the_mobo_datum.image %>" width="350" height="225">
       </dd>
 
       <dt>
@@ -119,13 +119,13 @@
 <div>
   <div>
     <h2>
-      Edit mobo datum
+      Edit This Motherboard
     </h2>
 
     <form action="/modify_mobo_datum/<%= @the_mobo_datum.id %>"  method="post" >
       <div>
         <label for="mobo_id_box">
-          Mobo
+          Motherboard
         </label>
 
         <input type="text" id="mobo_id_box" name="query_mobo_id" value="<%= @the_mobo_datum.mobo_id %>">
@@ -212,7 +212,7 @@
       </div>
 
       <button>
-        Update mobo datum
+        Update Motherboard
       </button>
     </form>
   </div>

@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      List of all case data
+      Computer Cases
     </h1>
   </div>
 </div>
@@ -11,7 +11,7 @@
 <div>
   <div>
     <h2>
-      Add a new case datum
+      Add a new Case
     </h2>
 
     <form action="/insert_case_datum" method="post">
@@ -96,7 +96,7 @@
       </div>
 
       <button>
-        Create case datum
+        Add Case
       </button>
     </form>
   </div>
@@ -107,17 +107,6 @@
   <div>
     <table>
       <tr>
-        <th>
-          ID
-        </th>
-
-        <th>
-          Case
-        </th>
-
-        <th>
-          Part type
-        </th>
 
         <th>
           Brand
@@ -125,10 +114,6 @@
 
         <th>
           Name
-        </th>
-
-        <th>
-          Item number
         </th>
 
         <th>
@@ -144,19 +129,7 @@
         </th>
 
         <th>
-          Link
-        </th>
-
-        <th>
           Image
-        </th>
-
-        <th>
-          Created at
-        </th>
-
-        <th>
-          Updated at
         </th>
 
         <th>
@@ -165,17 +138,6 @@
 
       <% @list_of_case_data.each do |a_case_datum| %>
       <tr>
-        <td>
-          <%= a_case_datum.id %>
-        </td>
-
-        <td>
-          <%= a_case_datum.case_id %>
-        </td>
-
-        <td>
-          <%= a_case_datum.part_type %>
-        </td>
 
         <td>
           <%= a_case_datum.brand %>
@@ -183,10 +145,6 @@
 
         <td>
           <%= a_case_datum.name %>
-        </td>
-
-        <td>
-          <%= a_case_datum.item_number %>
         </td>
 
         <td>
@@ -202,18 +160,7 @@
         </td>
 
         <td>
-          <%= a_case_datum.link %>
-        </td>
-
-        <td>
-          <%= a_case_datum.image %>
-        </td>
-
-        <td>
-          <%= time_ago_in_words(a_case_datum.created_at) %> ago
-        </td>
-        <td>
-          <%= time_ago_in_words(a_case_datum.updated_at) %> ago
+          <img src="<%= a_case_datum.image %>" width="100" height="65">
         </td>
 
         <td>

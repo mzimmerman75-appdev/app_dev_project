@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Cpu cooler datum #<%= @the_cpu_cooler_datum.id %> details
+      <%= @the_cpu_cooler_datum.name %> details
     </h1>
 
     <div>
@@ -13,7 +13,7 @@
 
       <div>
         <a href="/delete_cpu_cooler_datum/<%= @the_cpu_cooler_datum.id %>">
-          Delete cpu cooler datum
+          Delete CPU Cooler
         </a>
       </div>
     </div>
@@ -100,14 +100,14 @@
         Link
       </dt>
       <dd>
-        <%= @the_cpu_cooler_datum.link %>
+        <a href="<%= @the_cpu_cooler_datum.link %>">Part Link</a>
       </dd>
 
       <dt>
         Image
       </dt>
       <dd>
-        <%= @the_cpu_cooler_datum.image %>
+        <img src="<%= @the_cpu_cooler_datum.image %>" width="350" height="225">
       </dd>
 
       <dt>
@@ -133,7 +133,7 @@
 <div>
   <div>
     <h2>
-      Edit cpu cooler datum
+      Edit This CPU Cooler
     </h2>
 
     <form action="/modify_cpu_cooler_datum/<%= @the_cpu_cooler_datum.id %>"  method="post" >
@@ -242,7 +242,7 @@
       </div>
 
       <button>
-        Update cpu cooler datum
+        Update CPU Cooler
       </button>
     </form>
   </div>

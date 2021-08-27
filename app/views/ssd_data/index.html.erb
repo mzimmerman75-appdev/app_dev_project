@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      List of all ssd data
+      Storage
     </h1>
   </div>
 </div>
@@ -11,7 +11,7 @@
 <div>
   <div>
     <h2>
-      Add a new ssd datum
+      Add new Storage
     </h2>
 
     <form action="/insert_ssd_datum" method="post">
@@ -104,7 +104,7 @@
       </div>
 
       <button>
-        Create ssd datum
+        Add Storage
       </button>
     </form>
   </div>
@@ -115,13 +115,6 @@
   <div>
     <table>
       <tr>
-        <th>
-          ID
-        </th>
-
-        <th>
-          Storage
-        </th>
 
         <th>
           Part type
@@ -133,10 +126,6 @@
 
         <th>
           Name
-        </th>
-
-        <th>
-          Item number
         </th>
 
         <th>
@@ -156,19 +145,7 @@
         </th>
 
         <th>
-          Link
-        </th>
-
-        <th>
           Image
-        </th>
-
-        <th>
-          Created at
-        </th>
-
-        <th>
-          Updated at
         </th>
 
         <th>
@@ -177,13 +154,6 @@
 
       <% @list_of_ssd_data.each do |a_ssd_datum| %>
       <tr>
-        <td>
-          <%= a_ssd_datum.id %>
-        </td>
-
-        <td>
-          <%= a_ssd_datum.storage_id %>
-        </td>
 
         <td>
           <%= a_ssd_datum.part_type %>
@@ -195,10 +165,6 @@
 
         <td>
           <%= a_ssd_datum.name %>
-        </td>
-
-        <td>
-          <%= a_ssd_datum.item_number %>
         </td>
 
         <td>
@@ -218,18 +184,7 @@
         </td>
 
         <td>
-          <%= a_ssd_datum.link %>
-        </td>
-
-        <td>
-          <%= a_ssd_datum.image %>
-        </td>
-
-        <td>
-          <%= time_ago_in_words(a_ssd_datum.created_at) %> ago
-        </td>
-        <td>
-          <%= time_ago_in_words(a_ssd_datum.updated_at) %> ago
+          <img src="<%= a_ssd_datum.image %>" width="100" height="65">
         </td>
 
         <td>

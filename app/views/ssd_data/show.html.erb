@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Ssd datum #<%= @the_ssd_datum.id %> details
+      <%= @the_ssd_datum.name %> details
     </h1>
 
     <div>
@@ -13,7 +13,7 @@
 
       <div>
         <a href="/delete_ssd_datum/<%= @the_ssd_datum.id %>">
-          Delete ssd datum
+          Delete Storage
         </a>
       </div>
     </div>
@@ -86,14 +86,14 @@
         Link
       </dt>
       <dd>
-        <%= @the_ssd_datum.link %>
+        <a href="<%= @the_ssd_datum.link %>">Part Link</a>
       </dd>
 
       <dt>
         Image
       </dt>
       <dd>
-        <%= @the_ssd_datum.image %>
+        <img src="<%= @the_ssd_datum.image %>" width="350" height="225">
       </dd>
 
       <dt>
@@ -119,7 +119,7 @@
 <div>
   <div>
     <h2>
-      Edit ssd datum
+      Edit This Storage
     </h2>
 
     <form action="/modify_ssd_datum/<%= @the_ssd_datum.id %>"  method="post" >
@@ -212,7 +212,7 @@
       </div>
 
       <button>
-        Update ssd datum
+        Update Storage
       </button>
     </form>
   </div>

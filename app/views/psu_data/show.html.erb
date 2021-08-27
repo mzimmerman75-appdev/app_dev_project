@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Psu datum #<%= @the_psu_datum.id %> details
+      <%= @the_psu_datum.name %> details
     </h1>
 
     <div>
@@ -13,7 +13,7 @@
 
       <div>
         <a href="/delete_psu_datum/<%= @the_psu_datum.id %>">
-          Delete psu datum
+          Delete PSU
         </a>
       </div>
     </div>
@@ -79,14 +79,14 @@
         Link
       </dt>
       <dd>
-        <%= @the_psu_datum.link %>
+        <a href="<%= @the_psu_datum.link %>">Part Link</a>
       </dd>
 
       <dt>
         Image
       </dt>
       <dd>
-        <%= @the_psu_datum.image %>
+        <img src="<%= @the_psu_datum.image %>" width="350" height="225">
       </dd>
 
       <dt>
@@ -112,7 +112,7 @@
 <div>
   <div>
     <h2>
-      Edit psu datum
+      Edit This Power Supply
     </h2>
 
     <form action="/modify_psu_datum/<%= @the_psu_datum.id %>"  method="post" >
@@ -197,7 +197,7 @@
       </div>
 
       <button>
-        Update psu datum
+        Update PSU
       </button>
     </form>
   </div>

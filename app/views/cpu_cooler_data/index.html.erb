@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      List of all cpu cooler data
+      CPU Coolers
     </h1>
   </div>
 </div>
@@ -11,7 +11,7 @@
 <div>
   <div>
     <h2>
-      Add a new cpu cooler datum
+      Add a new CPU Cooler
     </h2>
 
     <form action="/insert_cpu_cooler_datum" method="post">
@@ -120,7 +120,7 @@
       </div>
 
       <button>
-        Create cpu cooler datum
+        Add CPU Cooler
       </button>
     </form>
   </div>
@@ -131,17 +131,6 @@
   <div>
     <table>
       <tr>
-        <th>
-          ID
-        </th>
-
-        <th>
-          Cooler
-        </th>
-
-        <th>
-          Part type
-        </th>
 
         <th>
           Brand
@@ -149,10 +138,6 @@
 
         <th>
           Name
-        </th>
-
-        <th>
-          Item number
         </th>
 
         <th>
@@ -175,43 +160,16 @@
           Air or water
         </th>
 
-        <th>
-          Max rpm
-        </th>
-
-        <th>
-          Link
-        </th>
 
         <th>
           Image
         </th>
 
-        <th>
-          Created at
-        </th>
 
-        <th>
-          Updated at
-        </th>
-
-        <th>
-        </th>
       </tr>
 
       <% @list_of_cpu_cooler_data.each do |a_cpu_cooler_datum| %>
       <tr>
-        <td>
-          <%= a_cpu_cooler_datum.id %>
-        </td>
-
-        <td>
-          <%= a_cpu_cooler_datum.cooler_id %>
-        </td>
-
-        <td>
-          <%= a_cpu_cooler_datum.part_type %>
-        </td>
 
         <td>
           <%= a_cpu_cooler_datum.brand %>
@@ -219,10 +177,6 @@
 
         <td>
           <%= a_cpu_cooler_datum.name %>
-        </td>
-
-        <td>
-          <%= a_cpu_cooler_datum.item_number %>
         </td>
 
         <td>
@@ -245,23 +199,9 @@
           <%= a_cpu_cooler_datum.air_or_water %>
         </td>
 
-        <td>
-          <%= a_cpu_cooler_datum.max_rpm %>
-        </td>
 
         <td>
-          <%= a_cpu_cooler_datum.link %>
-        </td>
-
-        <td>
-          <%= a_cpu_cooler_datum.image %>
-        </td>
-
-        <td>
-          <%= time_ago_in_words(a_cpu_cooler_datum.created_at) %> ago
-        </td>
-        <td>
-          <%= time_ago_in_words(a_cpu_cooler_datum.updated_at) %> ago
+          <img src="<%= a_cpu_cooler_datum.image %>" width="100" height="65">
         </td>
 
         <td>

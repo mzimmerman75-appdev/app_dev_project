@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Case datum #<%= @the_case_datum.id %> details
+      <%= @the_case_datum.name %> details
     </h1>
 
     <div>
@@ -13,7 +13,7 @@
 
       <div>
         <a href="/delete_case_datum/<%= @the_case_datum.id %>">
-          Delete case datum
+          Delete Case
         </a>
       </div>
     </div>
@@ -79,14 +79,14 @@
         Link
       </dt>
       <dd>
-        <%= @the_case_datum.link %>
+        <a href="<%= @the_case_datum.link %>">Part Link</a>
       </dd>
 
       <dt>
         Image
       </dt>
       <dd>
-        <%= @the_case_datum.image %>
+        <img src="<%= @the_case_datum.image %>" width="350" height="225">
       </dd>
 
       <dt>
@@ -112,7 +112,7 @@
 <div>
   <div>
     <h2>
-      Edit case datum
+      Edit this Case
     </h2>
 
     <form action="/modify_case_datum/<%= @the_case_datum.id %>"  method="post" >
@@ -197,7 +197,7 @@
       </div>
 
       <button>
-        Update case datum
+        Update Case
       </button>
     </form>
   </div>

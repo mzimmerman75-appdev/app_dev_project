@@ -8,14 +8,11 @@
 
 <hr>
 
-<div>
-  below you will find all the top processors on the market
-</div>
 
-<%# <div>
+<div>
   <div>
     <h2>
-      Add a new cpu datum
+      Add a new CPU to the List
     </h2>
 
     <form action="/insert_cpu_datum" method="post">
@@ -136,7 +133,7 @@
       </button>
     </form>
   </div>
-</div> %>
+</div>
 
 <hr>
 <div>
@@ -163,9 +160,9 @@
           Name
         </th>
 
-        <th>
+        <%# <th>
           Item number
-        </th>
+        </th> %>
 
         <th>
           Price
@@ -187,29 +184,29 @@
           Boost clock
         </th>
 
-        <th>
+        <%# <th>
           L3 cache
-        </th>
+        </th> %>
 
-        <th>
+        <%# <th>
           Socket
-        </th>
+        </th> %>
 
-        <th>
+        <%# <th>
           Link
-        </th>
+        </th> %>
 
         <th>
           Image
         </th>
 
-        <th>
+        <%# <th>
           Created at
         </th>
 
         <th>
           Updated at
-        </th>
+        </th> %>
 
         <th>
         </th>
@@ -217,17 +214,6 @@
 
       <% @list_of_cpu_data.each do |a_cpu_datum| %>
       <tr>
-        <td>
-          <%= a_cpu_datum.id %>
-        </td>
-
-        <td>
-          <%= a_cpu_datum.cpu_id %>
-        </td>
-
-        <td>
-          <%= a_cpu_datum.part_type %>
-        </td>
 
         <td>
           <%= a_cpu_datum.brand %>
@@ -237,9 +223,6 @@
           <%= a_cpu_datum.name %>
         </td>
 
-        <td>
-          <%= a_cpu_datum.item_number %>
-        </td>
 
         <td>
           <%= a_cpu_datum.price %>
@@ -261,28 +244,12 @@
           <%= a_cpu_datum.boost_clock %>
         </td>
 
-        <td>
-          <%= a_cpu_datum.l3_cache %>
-        </td>
+        
 
         <td>
-          <%= a_cpu_datum.socket %>
+          <img src="<%= a_cpu_datum.image %>" width="100" height="65">
         </td>
 
-        <td>
-          <%= a_cpu_datum.link %>
-        </td>
-
-        <td>
-          <%= a_cpu_datum.image %>
-        </td>
-
-        <td>
-          <%= time_ago_in_words(a_cpu_datum.created_at) %> ago
-        </td>
-        <td>
-          <%= time_ago_in_words(a_cpu_datum.updated_at) %> ago
-        </td>
 
         <td>
           <a href="/cpu_data/<%= a_cpu_datum.id %>">

@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Cpu datum #<%= @the_cpu_datum.id %> details
+      <%= @the_cpu_datum.name %> Details
     </h1>
 
     <div>
@@ -10,13 +10,6 @@
           Go back
         </a>
       </div>
-
-      <div>
-        <a href="/delete_cpu_datum/<%= @the_cpu_datum.id %>">
-          Delete cpu datum
-        </a>
-      </div>
-    </div>
 
     <dl>
       <dt>
@@ -90,13 +83,6 @@
       </dd>
 
       <dt>
-        L3 cache
-      </dt>
-      <dd>
-        <%= @the_cpu_datum.l3_cache %>
-      </dd>
-
-      <dt>
         Socket
       </dt>
       <dd>
@@ -107,29 +93,16 @@
         Link
       </dt>
       <dd>
-        <%= @the_cpu_datum.link %>
+        <a href="<%= @the_cpu_datum.link %>">Newegg Link</a>
       </dd>
 
       <dt>
         Image
       </dt>
       <dd>
-        <%= @the_cpu_datum.image %>
+        <img src="<%= @the_cpu_datum.image %>" width="200" height="130">
       </dd>
 
-      <dt>
-        Created at
-      </dt>
-      <dd>
-        <%= time_ago_in_words(@the_cpu_datum.created_at) %> ago
-      </dd>
-
-      <dt>
-        Updated at
-      </dt>
-      <dd>
-        <%= time_ago_in_words(@the_cpu_datum.updated_at) %> ago
-      </dd>
     </dl>
   </div>
 </div>
@@ -140,7 +113,7 @@
 <div>
   <div>
     <h2>
-      Edit cpu datum
+      Edit This Processor
     </h2>
 
     <form action="/modify_cpu_datum/<%= @the_cpu_datum.id %>"  method="post" >
